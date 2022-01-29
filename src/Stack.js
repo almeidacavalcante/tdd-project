@@ -13,10 +13,10 @@ export default class Stack {
     }
 
     pop() {
-        const top = this.items[this.top];
+        const element = this.items[this.top];
         delete this.items[this.top];
         this.top--;
-        return top;
+        return element;
     }
 
     length = () => {
