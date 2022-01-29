@@ -1,4 +1,4 @@
-class Stack {
+export default class Stack {
     constructor() {
         this.top = -1;
         this.items = {};
@@ -18,8 +18,8 @@ class Stack {
         this.top--;
         return top;
     }
-}
 
-module.exports = {
-    Stack
+    length = () => {
+        return Object.keys(this.items).length;
+    }
 }
