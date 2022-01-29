@@ -1,4 +1,4 @@
-import Stack from 'Stack';
+import Stack from '../src/Stack';
 
 describe('Testing the Stack implementation', () => {
     let stack;
