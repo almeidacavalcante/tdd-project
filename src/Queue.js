@@ -19,4 +19,12 @@ export default class Queue {
         delete this.items[this.head];
         return element;
     }
+
+    length() {
+        return Object.keys(this.items).length;
+    }
+
+    values() {
+        return Object.values(this.items);
+    }
 }
